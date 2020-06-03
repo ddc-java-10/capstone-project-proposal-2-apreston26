@@ -1,61 +1,52 @@
 ---
-title: My capstone project
-description: "Trust me, it'll be cool"
+title: Flipp Flopp
+description: "A fun platformer to kill time"
 layout: default
 ---
 
 ## Summary
 
-Replace this paragraph with one or more paragraphs summarizing the purpose and operation of the software you propose to develop in this project.
+A platformer that has unique objects that will make platforms either disappear or appear and as standard in these games they get progressively harder as the user progresses. The player will have to use Flipps and Flopps to reach the end of each level. A Flipp would make the platforms disappear and a Flopp would make objects appear. Along with the base game, the players are also timed and racing against each other for a spot on the leaderboard.
 
 ## Intended users
 
-Write a bullet list here, including at least 2 different types of intended users. Make it reasonably specific; simply saying "Anyone who likes games" (for example) is not sufficiently specific.
+* People who need a time waster 
+	> As someone who rides public transport fairly often I need something to do to kill the time inbetween my destintations. 
 
-For each type of intended user, include at least 1 _user story_. A user story is usually just 1 simple sentence (no more than 2 sentences), in the voice of the intended user, stating a specific task that the user needs to perform, and the benefit that will be obtained. The simplest user stories take the form 
-
-> As a <type of intended user (_who_)> I want to <goal (_what_)> so that <benefit (_why_).
-
-Please avoid writing too much for the user story. In particular, if the way the user story is written makes it difficult to see the _who_, _what_, and _why_, then you probably need to re-write it more directly. (On the other hand, a user story should not simply be a re-statement of the intended user description.)
-
-Here is one (silly) example of an intended user, along with a user story. Please note not only the conceptual structure, but the Markdown syntax used.
-
-* People who like to use randomness in their decision making.
-
-    > As someone who enjoys randomness in my life, I need an app that lets me flip a virtual coin or roll one or more virtual dice, so that I can base my decisions on randomness, without having to carry coins or dice in my pockets.
+* People who need a challenge 
+	> As someone who is very competitve and needs a new challenge I want to find more apps that I can climb the leaderboard and this is the perfect app for me!
 
 ## Client component
 
 * **Functionality**
 
-    List the key functional aspects that will be provided by the user interface&mdash;i.e. tell us what the user will be able to do in the GUI.
+    There will be four screens one is the leaderboard screen which shows all the players and their times. The second screen is the actual play screen where the user will have five buttons to move in four directions and jump. The next screen would be a level selection screen where the player can return to previous levels or there current level, and the third screen is the menu screen where the user can pick between the leaderboard
 
 * **Persistent data**
 
-    Summarize, in general terms, what content will be stored on the client side. This should include any information that a user of your system should expect to be maintained locally (i.e. without connection to a server) across multiple sessions of use, on a single device. 
-    
+    On the client side it should save the level progression and allow you to return to past levels and remember what level you where last in, but not the exact position of the player. 
+	
 * **Device/external services**
 
-    If the client component will need to access special services of the device (e.g. sensors, contacts, messaging), list them here. Also, if the client component will need to access already-existing external services (e.g. real-time weather data, Open Trivia Database), those should also be listed here; any such references to external services should include links to the main page or API description page for the service.
-    
-For listing multiple items, please use bullet lists (or ordered lists, if order is relevant), not just separate lines or paragraphs of text.
+    N/A 
     
 ## Server component
 
 * **Functionality**
 
-    List the key functional aspects that will be provided by the server component&mdash;i.e. tell us what parts of the system functionality will be performed by the server.
+	The server is in charge of keeping the time and position on the leaderboard
 
 * **Persistent data**
 
-    Summarize, in general terms, what content will be stored on the server side. This should include any information that a user of your system should expect to be accessible across multiple sessions of use, even if accessed from separate devices. In addition, if there will be data originating from some users that will then be accessible by other users, it should be part of the persistent data on the server. 
+	On the server side it'll keep a record of the player's time to beat a level then store it in a database then sort that into the leaderboard and keep up the position. 
     
 * **External services**
 
-    If the server component will need to access already-existing external services (e.g. stock prices, Open Movie Database), those should also be listed here. Any such references to external services should include links to the main page or API description page for the service.
-    
-For listing multiple items, please use bullet lists (or ordered lists, if order is relevant), not just separate lines or paragraphs of text.
+    From an API standpoint I think the main API needed are for the timer on each level.
     
 ## Stretch goals/possible enhancements 
 
-If you can identify functional elements of the software that you think might not be achievable in the scope of the project, but which would nonetheless add significant value if you were able to include them, list them here. For now, we recommend listing them in order of complexity/amount of work, from the least to the most.
+* Ghost of either the fastest attempt, slowest attempt, or even just the players last attempt.
+* Every 5-10 levels a boss level or even just an extra challenging to bridge into a new "environment" that's just a new backaround.
+* Depending on the player's position on the leaderboard you could get rewards along with a fifth screen to show rewards.
+* Music in the background
